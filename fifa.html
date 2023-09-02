@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+				<!-- Google tag (gtag.js) -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-F6WR3SR7YK"></script>
+				<script>
+				  window.dataLayer = window.dataLayer || [];
+				  function gtag(){dataLayer.push(arguments);}
+				  gtag('js', new Date());
+				
+				  gtag('config', 'G-F6WR3SR7YK');
+				</script>
+				
+		<title>Maria Pilar Bifaretti Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Maria Pilar Bifaretti</a>
+			</header>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- Post -->
+						<section class="post">
+							<header class="major">
+								<h1 style="font-size: 3rem;">Unveiling the Magic of the FIFA World Cup Through Data Analytics</h1>
+								<p><a href="https://github.com/pilarbifaretti/SQL_FIFA">GitHub</a></p>
+							</header>
+							<hr/>
+
+					<!-- Text stuff -->
+					<h2>The Challenge</h2>
+					<p>In the world of international soccer, the FIFA World Cup stands as the ultimate battleground, where countries compete for glory and soccer fans unite in anticipation. However, beneath the surface of this sporting event lies a wealth of <b> untapped insights waiting to be explored</b>. </p>
+
+					<blockquote style="font-size: 18px;">By delving into the records of FIFA World Cup history (up until 2014), the aim was to unearth hidden patterns and understand the factors that define success on the grandest stage of the sport.</blockquote>
+
+					<h2>The Context</h2>
+					<p>The analysis was done using <a href="https://www.kaggle.com/datasets/abecklas/fifa-world-cup">FIFA World Cup data</a>, a compendium of over <b>80,000 records</b> encapsulating the tournament's legacy. This dataset was a tapestry of information, chronicling match outcomes, team performances, goal statistics, player brilliance, and so much more. Sourced directly from <i>FIFA's official records</i> and cultivated by a passionate community of soccer enthusiasts, it offered a comprehensive view of the World Cup's historical journey.</p>
+					<p>The dataset featured more than <b>20 columns of data.</b> From <i>match dates, locations, and team line-ups to player statistics, referee details</i>, and even nuances like extra time and penalty shootouts—no aspect of the game was left unexplored.</p>
+
+
+					<h2>The Findings</h2>
+					<p>As I navigated through the data, remarkable revelations began to take shape. Here are some of the top findings:</p>
+
+					<ol>
+						<li><u>Dominant Teams</u> </li>
+						<ul>
+							<li>Brazil, with its illustrious history, boasts an astounding five World Cup victories.</li>
+							<li>Germany's consistency, frequently reaching the semifinals, underscores its soccer prowess.</li>
+							<li>Strong Finalists: Teams like Brazil, Italy, Argentina, and Germany have consistently reached the finals, demonstrating their prowess in the tournament. These teams are the ones to watch out for in any World Cup edition.</li>
+						</ul>
+						<div style="display: flex; justify-content: space-between;">
+							<div style="flex: 1; margin-right: 10px;">
+								<iframe src="plotly/fig1.html" width="450" height="400" scrolling="auto"></iframe>
+
+							</div>
+							<div style="flex: 1; margin-left: 10px;">
+								<iframe src="plotly/fig3.html" width="450" height="400"></iframe>
+							</div>
+						</div>
+						
+						
+						<li><u>The Art of Goals</u> </li>
+						<ul>
+							<li>There's an intriguing correlation between the number of goals scored and tournament eras, reflecting changes in soccer strategy.</li>
+							<li>The World Cup unfolds in stages, each with its unique drama. The preliminary and first rounds feature the highest average goals per match, a testament to the unpredictability and flair that characterize the early stages.</li>
+						</ul>
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<iframe src="plotly/fig4.html" width="600" height="400"></iframe>
+						</div>
+
+
+						<li><u>Icononic host cities</u> </li>
+						<ul>
+							<li>Cities like Mexico City, Montevideo, and Guadalajara have hosted the most matches. These cities have been at the heart of World Cup history, hosting numerous memorable matches.</li>
+						</ul>
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<iframe src="plotly/fig9.html" width="600" height="400"></iframe>
+						</div>
+					</ol>
+
+
+
+					<!-- Text Stuff -->
+					<h2>The Process</h2>
+					
+					<p>Using Python, the analysis was done as followed:</p>
+					<dl>
+						<dt>Step 1:  Data Import</dt>
+						<dd>
+							<p>The FIFA World Cup dataset was inserted into the chosen data analysis environment (Python with Pandas).</p>
+						</dd>
+						<dt>Step 2: Data Cleaning</dt>
+						<dd>
+							<p>TThe dataset required  cleaning, including handling missing values, correcting data types, and removing duplicates</p>
+						</dd>
+						<dt>Step 3: Data Transformation</dt>
+						<dd>
+							<p>The data was structued into a third normal form, creating tables for matches, teams, players, and more, to facilitate efficient querying</p>
+						</dd>
+							<div style="text-align: center;">
+								<span class="image fit">
+									<img src="images/ER_diagram_FIFA.jpg" alt="" style="max-width: 60%; height: auto; margin: 0 auto; display: block;" />
+								</span>
+							</div>					
+						<dt>Step 4: Data Analysis</dt>
+						<dd>
+							<p> Leveraging SQL, valuable insights were extracted and Plotly was used as a visualization tools to create compelling charts and graphs. .</p>
+						</dd>
+					</dl>
+
+					<span class="image fit"><img src="images/mundial.jpg" alt="" /></span> 
+
+					<p>In conclusion, the FIFA World Cup dataset has proven to be a treasure trove of insights. It's not just about the goals, the victories, or the defeats; it's about the journey, the stories, and the evolution of soccer itself.</p>
+					<blockquote style="font-size: 18px;">In essence, this FIFA World Cup data analysis odyssey serves as a testament to the power of data. It is not merely a collection of numbers, but a story waiting to be told. </blockquote>
+
+
+					<p style="font-size: 12px;"><i>Source: The analysis was performed on the FIFA World Cup dataset from Kaggle (https://www.kaggle.com/datasets/abecklas/fifa-world-cup).</i></p>
+
+					<!-- Buttons -->
+					<ul class="actions fit">
+						<li><a href="https://github.com/pilarbifaretti/SQL_FIFA" class="button primary fit"> Explore Code on GitHub </a></li>						
+					</ul>
+
+					
+						<!-- Footer -->
+						<footer>
+						</div>
+					</footer>
+
+			</div>
+  
+  
+				
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="alt">
+							<h3>Location</h3>
+							<p>New York City, NY</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">pilarbifaretti@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/pilarbifaretti/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+								<li><a href="https://github.com/pilarbifaretti" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+					</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
